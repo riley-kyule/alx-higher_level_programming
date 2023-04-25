@@ -4,7 +4,7 @@ const url = 'https://swapi-api.alx-tools.com/api/films/' + process.argv[2];
 request(url, function (error, response, body) {
   if (!error) {
     const characters = JSON.parse(body).characters;
-    printCharacters(character, 0);
+    printCharacters(characters, 0);
   }
 });
 
